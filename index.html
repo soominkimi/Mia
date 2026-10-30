@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>저는요, 김수민</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-home">
+  <button class="fullscreen" type="button" data-fullscreen>전체화면</button>
+  <button class="thanks-link" type="button" data-open="thanks">Thank you :)</button>
+
+  <nav class="orbit" aria-label="키워드">
+    <button class="orbit-home" type="button" data-open="home">저는요</button>
+    <button class="node n-edu" type="button" data-open="edu">교육</button>
+    <button class="node n-book" type="button" data-open="book">책</button>
+    <button class="node n-tmi" type="button" data-open="tmi">TMI</button>
+    <button class="node n-dog" type="button" data-open="sukhee">숙희</button>
+  </nav>
+
+  <section class="screen home is-active" data-screen="home">
+    <div class="cluster">
+      <svg class="wires" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="50" y1="46" x2="16" y2="28" />
+        <line x1="50" y1="46" x2="84" y2="18" />
+        <line x1="50" y1="50" x2="22" y2="78" />
+        <line x1="50" y1="50" x2="82" y2="74" />
+      </svg>
+      <div class="hub">
+        <img class="hi" src="assets/hi.png" alt="하이, 김수민">
+        <div class="hub-copy">
+          <p class="mini">저는요...</p>
+          <h1>김수민 <span>Mia</span></h1>
+          <p class="meta">1990년생<br>고양시 거주<br>남편1 똥개1과 살아요</p>
+        </div>
+      </div>
+      <button class="node blob n-edu" type="button" data-open="edu">교육</button>
+      <button class="node blob n-book" type="button" data-open="book">책</button>
+      <button class="node blob n-dog" type="button" data-open="sukhee">숙희</button>
+      <button class="node blob n-tmi" type="button" data-open="tmi">TMI</button>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="edu" hidden>
+    <div class="story">
+      <p class="edu-lead">유아부터 중·고등학생, 교강사 대상 SW 교육으로 사회생활 시작!<br>커리큘럼과 교재를 만들고, 직접 가르치고, 정부사업에 참여하며 전국을 다녔습니다.</p>
+    </div>
+    <div class="gallery edu-fit">
+      <button type="button" data-zoom><img src="assets/edu/edu-02.jpg" alt="교육 사진"></button>
+      <button type="button" data-zoom><img src="assets/edu/edu-03.jpg" alt="교육 사진"></button>
+      <button type="button" data-zoom><img src="assets/edu/edu-04.jpg" alt="교육 사진"></button>
+      <button type="button" data-zoom><img src="assets/edu/edu-05.jpg" alt="교육 사진"></button>
+      <button type="button" data-zoom><img src="assets/edu/edu-07.jpg" alt="교육 사진"></button>
+      <button type="button" data-zoom><img src="assets/edu/edu-08.jpg" alt="교육 사진"></button>
+      <button type="button" data-zoom><img src="assets/edu/edu-09.jpg" alt="교육 사진"></button>
+      <button type="button" data-zoom><img src="assets/edu/edu-10.jpg" alt="교육 사진"></button>
+      <button type="button" data-zoom><img src="assets/edu/edu-11.jpg" alt="교육 사진"></button>
+      <button type="button" data-zoom><img src="assets/edu/edu-12.jpg" alt="교육 사진"></button>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="book" hidden>
+    <div class="story">
+      <h2>가르치는 사람인 줄 알았는데,<br>만드는 사람이었습니다.</h2>
+      <p class="book-line">커리큘럼을 짜고, 그게 손에 잡히는 교재, 즉 책이라는 형태가 될 때가 제일 짜릿했습니다.</p>
+      <p class="book-line">그래서 결심했습니다. <span class="punch">나 출판사 가야겠어!</span></p>
+    </div>
+    <div class="deck">
+      <button type="button" data-zoom><img src="assets/book/p05.jpg" alt="포트폴리오 5쪽"></button>
+      <button type="button" data-zoom><img src="assets/book/p06.jpg" alt="포트폴리오 6쪽"></button>
+      <button type="button" data-zoom><img src="assets/book/p07.jpg" alt="포트폴리오 7쪽"></button>
+      <button type="button" data-zoom><img src="assets/book/p08.jpg" alt="포트폴리오 8쪽"></button>
+      <button type="button" data-zoom><img src="assets/book/p09.jpg" alt="포트폴리오 9쪽"></button>
+      <button type="button" data-zoom><img src="assets/book/p10.jpg" alt="포트폴리오 10쪽"></button>
+      <button type="button" data-zoom><img src="assets/book/p11.jpg" alt="포트폴리오 11쪽"></button>
+      <button type="button" data-zoom><img src="assets/book/p12.jpg" alt="포트폴리오 12쪽"></button>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="sukhee" hidden>
+    <div class="story">
+      <div class="sukhee-head">
+        <h2>박 숙희 씨</h2>
+        <div class="sukhee-meta">
+          <p class="facts">진도비빔 · 1살 · 나름 암컷</p>
+          <button class="secret-btn" type="button" data-secret aria-expanded="false" aria-controls="secret">출생의 비밀</button>
+          <p class="skill">특기: 닥치는 대로 물어뜯기 <button class="chew-btn" type="button" data-chew aria-expanded="false" aria-controls="chew">이렇게...</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="stages">
+      <button type="button" data-stage="baby" class="is-on">요랬는데</button>
+      <button type="button" data-stage="mid">요랬다가</button>
+      <button type="button" data-stage="now">요래 되었습니다</button>
+    </div>
+    <div class="stage-panel" data-stage-panel="baby">
+      <img src="assets/sukhee/baby/baby-01.jpg" alt="아기 숙희" data-zoom>
+      <img src="assets/sukhee/baby/baby-02.jpg" alt="아기 숙희" data-zoom>
+      <img src="assets/sukhee/baby/baby-03.jpg" alt="아기 숙희" data-zoom>
+      <video src="assets/sukhee/baby/baby-01.mp4" autoplay muted playsinline controls></video>
+    </div>
+    <div class="stage-panel" data-stage-panel="mid" hidden>
+      <img src="assets/sukhee/mid/mid-01.jpg" alt="자라던 숙희" data-zoom>
+      <img src="assets/sukhee/mid/mid-02.jpg" alt="자라던 숙희" data-zoom>
+      <img src="assets/sukhee/mid/mid-03.jpg" alt="자라던 숙희" data-zoom>
+      <video src="assets/sukhee/mid/mid-01.mp4" autoplay muted playsinline controls></video>
+    </div>
+    <div class="stage-panel" data-stage-panel="now" hidden>
+      <img src="assets/sukhee/now/now-01.jpg" alt="지금 숙희" data-zoom>
+      <img src="assets/sukhee/now/now-02.jpg" alt="지금 숙희" data-zoom>
+      <img src="assets/sukhee/now/now-03.jpg" alt="지금 숙희" data-zoom>
+      <video src="assets/sukhee/now/now-01.mp4" autoplay muted playsinline controls></video>
+    </div>
+    <div class="secret" id="secret" hidden>
+      <button type="button" data-zoom><img src="assets/sukhee/mom-01.jpg" alt="숙희 엄마와 새끼들"></button>
+    </div>
+    <div class="chew" id="chew" hidden>
+      <button type="button" data-zoom><img src="assets/sukhee/chew/chew-01.jpg" alt="물어뜯는 숙희"></button>
+      <button type="button" data-zoom><img src="assets/sukhee/chew/chew-02.jpg" alt="물어뜯는 숙희"></button>
+      <button type="button" data-zoom><img src="assets/sukhee/chew/chew-03.jpg" alt="물어뜯는 숙희"></button>
+      <button type="button" data-zoom><img src="assets/sukhee/chew/chew-04.jpg" alt="물어뜯는 숙희"></button>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="tmi" hidden>
+    <div class="story">
+      <h2>고질병이 있습니다.</h2>
+    </div>
+    <div class="ailments">
+      <article class="ailment-neck">
+        <h3>현대인의 고질병</h3>
+        <p class="aside">목을 자주 돌려도 이해해 주세요...</p>
+        <button class="neck-shot" type="button" data-zoom>
+          <img src="assets/health/health-01.jpg" alt="일자목 엑스레이">
+        </button>
+      </article>
+      <article class="ailment-eye">
+        <h3>개/고양이가 잘 걸린다는 포도막염(총 3회)</h3>
+        <p class="aside">눈 빨개도 운 거 아닙니다.</p>
+        <button class="eye-thumb" type="button" data-zoom>
+          <img src="assets/health/health-02.jpg" alt="포도막염으로 충혈된 눈">
+        </button>
+      </article>
+      <article class="ailment-cold">
+        <h3>한랭 두드러기</h3>
+        <p>추우면 모기에 물린 것처럼<br>알러지가 돋습니다.<br><br>곧 겨울이니 보여 드릴게요 ^.ㅜ</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="thanks" hidden>
+    <figure class="flower">
+      <img src="assets/flowers.jpg" alt="한빛미디어와 골든래빗에서 받은 축하 꽃">
+      <figcaption>
+        <span class="flower-kicker">좌 한빛미디어, 우 골든래빗</span>이때는 몰랐습니다.<br>제가 다니는 회사 순서가 될 줄은^^
+        <p class="finale" aria-label="신나게 일해요!"><span class="n-c">신</span><span class="n-p">나</span><span class="n-l">게</span> <span class="n-v">일</span><span class="n-c">해</span><span class="n-p">요</span><span class="n-l">!</span></p>
+      </figcaption>
+  </section>
+
+  <div class="lightbox" hidden>
+    <button class="lightbox-close" type="button" data-close-light>닫기</button>
+    <img alt="">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
